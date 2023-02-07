@@ -47,3 +47,7 @@
         opacity: 1;
      }
 }
+
+.mar {
+    margin-top: clamp(200px, 25vh, 400px);
+}
