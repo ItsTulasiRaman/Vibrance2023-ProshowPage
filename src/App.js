@@ -7,18 +7,18 @@ import insta from "./assets/instagramicon.svg"
 import tweet from "./assets/twittericon.svg"
 //import proshowbg from "./assets/proshowbg.svg"
 
-function App() {
+function App({name,description}) {
   return (
     <>
       <section className="mb-[40px]">
 
-        <div className='flex justify-center mt-[30px] min-w-[520px]'>
+         <div className='flex justify-center mt-[30px] min-w-[320px]'>
           <img className='w-[60%]' src={proshowintro} alt='pro show intro' />
         </div>
 
 
 
-
+{/* Card 1 begins here */}
 <div className=''>
         <div className='flex justify-center mt-[40px] m-w-[400px]'>
           <div className='p-[2%] w-[90%] flex md:flex-row flex-col gap-1 bdr'>
@@ -33,7 +33,6 @@ function App() {
                 </div>
               </div>
             </div>
-
 
             <div className='md:mt-[0px] md:ml-[-20px] p-[1%]'>
               <h1 className='text-white text-8xl'>Ritviz</h1>
@@ -59,9 +58,10 @@ function App() {
 
 
 
+{/* End of 1st card */}
 
-
-        <div className='flex justify-center mt-[40px]'>
+{/* Second card begins here */}
+        {/* <div className='flex justify-center mt-[40px]'>
           <div className='p-[2%] w-[90%] flex md:flex-row flex-col gap-1 bdr'>
             <div className='w-[40%] clearfix md:h-auto sm:h-[260px] h-[220px] p-[1%]'>
               <div className='relative'>
@@ -91,7 +91,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       </section>
     </>
