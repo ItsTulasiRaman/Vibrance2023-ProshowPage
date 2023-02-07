@@ -22,11 +22,15 @@ function App() {
 <div className=''>
         <div className='flex justify-center mt-[40px] m-w-[400px]'>
           <div className='p-[2%] w-[90%] flex md:flex-row flex-col gap-1 bdr'>
-            <div className='w-[40%] clearfix md:h-auto sm:h-[260px] h-[220px] p-[1%]'>
-              <div className='relative'>
-                <div className='fadeIn w-[25%] top-0 right-0 absolute'><img src={titik} alt='white dots' /></div>
-                <div className='fadeIn w-[25%] top-[220px] left-0 absolute'><img className='' src={titik} alt='white dots' /></div>
-                <div className='w-[70%] absolute top-[30px] left-[50px]'><img classname='' src={artist} alt='artist' /></div>
+            <div className='md:w-[40%] w-[100%] md:h-auto h-[50vh] p-[1%]'>
+              <div className='card1'>
+                <div className='fadeIn w-[85px] float-right '><img src={titik} alt='white dots' /></div>
+                <div className=''>
+                <div className='fadeIn w-[85px] absolute md:bottom-[20px] md:top-auto top-[33%]'><img className='' src={titik} alt='white dots' /></div>
+                </div>
+                <div className='relative'>
+                <div className='w-[75%] top-[30px] left-[10%] flex justify-center absolute'><img classname='' src={artist} alt='artist' /></div>
+                </div>
               </div>
             </div>
 

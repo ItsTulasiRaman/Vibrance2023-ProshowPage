@@ -3,6 +3,18 @@
     clear: both;
     display: table;
 }
+.corn{
+    position: unset;
+}
+.card1{
+    position: unset;
+
+}
+
+.card1bottom{
+    position: absolute;
+    bottom: 20px;
+}
 
 .bdr {
     position: relative;
