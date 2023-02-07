@@ -21,7 +21,7 @@ function App({name,description}) {
 {/* Card 1 begins here */}
 <div className=''>
         <div className='flex justify-center mt-[40px] m-w-[400px]'>
-          <div className='p-[2%] w-[90%] flex md:flex-row flex-col gap-1 bdr'>
+          <div className='p-[2%] w-[90%] min-w-[390px] flex md:flex-row flex-col gap-1 bdr'>
             <div className=' w-[100%] md:h-auto xl:w-[40%] lg:w-[60%] md:w-[70%] p-[1%] '>
               <div className='card1 md:px-0 px-[20%] sm:h-[55vh] h-[220px]'>
                 <div className='fadeIn w-[85px] float-right'><img className='' src={titik} alt='white dots' /></div>
