@@ -51,3 +51,12 @@
 .mar {
     margin-top: clamp(200px, 25vh, 400px);
 }
+
+.bot{
+    bottom: 10%;
+    left: 1%;
+}
+
+.heightCard{
+    height: calc(screen*0.3);
+}
