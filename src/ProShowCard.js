@@ -26,14 +26,14 @@ function ProShowCard({name,description}) {
 
             <div className='md:mt-[0px] md:ml-[-20px] p-[1%]'>
               <h1 className='text-white text-8xl'>{name}</h1>
-              <div className='flex flex-col gap-2 md:ml-[-40px] p-[10px]'>
+              <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px]'>
                 <p className='text-white'>{description}</p>
                 <div className='flex flex-row gap-4'>
                   <img className='w-[40px]' src={insta} alt='instagram' />
                   <img className='w-[40px]' src={tweet} alt='twitter' />
                 </div>
-                <div>
-                  <button className='bg-[#E7704B] p-[10px] font-medium mb-[2%]'>
+                <div className='mt-[18px]'>
+                  <button className='bg-[#E7704B] px-[24px] py-[16px] font-medium mb-[2%]'>
                     <div className='flex flex-row gap-[10px]'>
                       <p>Book tickets</p>
                       <img src={bookticketsarrow} alt='book tickets icon' />
