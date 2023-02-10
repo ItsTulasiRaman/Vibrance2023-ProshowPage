@@ -3,6 +3,7 @@ import ProShowCard from './ProShowCard';
 import './App.css'
 import { useEffect, useState } from 'react';
 import "./assets/gilroy-font/Gilroy-Light.ttf"
+import Navbar from './Navbar';
 import artist from './assets/artist.png'
 import titik from './assets/titik-titik.png'
 import bookticketsarrow from './assets/bookticketsarrow.svg'
@@ -29,9 +30,11 @@ useEffect(() => {
   }
   getData()
 }, [])
+
 console.log(proShowData[0])
   return (
     <>
+    <Navbar/>
       {Loading ? (<section className="mb-[40px]">
 
          <div className='flex justify-center mt-[30px] min-w-[320px]'>
@@ -43,7 +46,7 @@ console.log(proShowData[0])
 {/* Card 1 begins here */}
 <div className=''>
 <div>
-  <ProShowCard name={proShowData[0].title} description={proShowData[0].description}/>
+  <ProShowCard proShowData={proShowData} />
 </div>
 
 {/* End of 1st card */}
