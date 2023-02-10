@@ -1,6 +1,8 @@
 import proshowintro from './assets/proshowintro.png'
 import ProShowCard from './ProShowCard';
 import './App.css'
+import { useEffect, useState } from 'react';
+import "./assets/gilroy-font/Gilroy-Light.ttf"
 import artist from './assets/artist.png'
 import titik from './assets/titik-titik.png'
 import bookticketsarrow from './assets/bookticketsarrow.svg'
@@ -8,9 +10,29 @@ import insta from "./assets/instagramicon.svg"
 import tweet from "./assets/twittericon.svg"
 
 function App() {
+  const [Loading, SetLoading] = useState(false)
+  const [LoadingPage, SetLoadingPage] = useState(false)
+  const [proShowData,setproShowData] = useState([]);
+useEffect(() => {
+  async function getData() {
+    try{
+      SetLoadingPage(true)
+    const response = await fetch(`https://vitvibrance.onrender.com/api/v1.0/pro-shows`)
+    const data = await response.json();
+    setproShowData(data.pro_shows)
+    SetLoadingPage(false)
+    SetLoading(true)
+  }
+    catch(error){
+      console.log(error)
+    }
+  }
+  getData()
+}, [])
+console.log(proShowData[0])
   return (
     <>
-      <section className="mb-[40px]">
+      {Loading ? (<section className="mb-[40px]">
 
          <div className='flex justify-center mt-[30px] min-w-[320px]'>
           <img className='w-[60%]' src={proshowintro} alt='pro show intro' />
@@ -21,9 +43,7 @@ function App() {
 {/* Card 1 begins here */}
 <div className=''>
 <div>
-  <ProShowCard name={"Ritviz"} description={"Lorem ipsum dolor sit amet consectetur. Et maecenas parturient vulputate netus lectus in faucibus massa dui. Varius urna pellentesque faucibus sed at. Mauris augue non imperdiet diam fermentum."}/>
-  
-  <ProShowCard name={"Ritviz"} description={"Lorem ipsum dolor sit amet consectetur. Et maecenas parturient vulputate netus lectus in faucibus massa dui. Varius urna pellentesque faucibus sed at. Mauris augue non imperdiet diam fermentum."}/>
+  <ProShowCard name={proShowData[0].title} description={proShowData[0].description}/>
 </div>
 
 {/* End of 1st card */}
@@ -59,8 +79,14 @@ function App() {
               </div>
             </div>
           </div>*/}
-        </div> 
-      </section>
+        </div>
+      </section>)
+    :
+      (<section>
+        <div className='flex justify-center mt-[30px] min-w-[320px]'>
+          <img className='w-[60%]' src={proshowintro} alt='pro show intro' />
+        </div>
+      </section>)}
     </>
   );
 }
