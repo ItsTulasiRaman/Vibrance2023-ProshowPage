@@ -34,7 +34,7 @@ const navigate = useNavigate();
                   <a href='https://www.twitter.com' target="_blank" rel='noopener noreferrer'><img className='w-[40px] relative' src={tweet} alt='twitter' /></a>
                 </div>
                 <div className='mt-[18px]'>
-                  <div className='w-[200px] grid'>
+                  <div className='w-[193px] grid'>
                     <a className="btn-epic" href="/" target="_blank" rel='noreferrer'>
                       <div>
                         <span>
