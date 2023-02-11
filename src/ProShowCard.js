@@ -26,9 +26,9 @@ function ProShowCard({ proShowData }) {
 
 
 
-            <div className='md:mt-[0px] md:ml-[-20px] p-[1%]'>
-              <h1 className='text-white text-8xl cirkafont text-[120px]'>{show.title}</h1>
-              <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px]'>
+            <div className='md:mt-[0px] md:ml-[-20px] p-[1%] pt-0'>
+              <h1 className='text-white md:text-8xl text-[56px] cirkafont text-[120px]'>{show.title}</h1>
+              <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px] mt-[4px]'>
                 <p className='text-white gilroyfont'>{show.description}</p>
                 <div className='flex flex-row gap-4'>
                   <img className='w-[40px]' src={insta} alt='instagram' />
