@@ -38,7 +38,7 @@ console.log(proShowData[0])
       {Loading ? (<section className="mb-[40px]">
 
          <div className='flex justify-center mt-[30px] min-w-[320px]'>
-          <img className='w-[80%]' src={proshowintro} alt='pro show intro' />
+          <img className='w-[83.33%]' src={proshowintro} alt='pro show intro' />
         </div>
 
 
