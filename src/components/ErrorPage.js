@@ -9,6 +9,9 @@ function ErrorPage() {
     <button className='mt-5 bg-[#F65926] rounded p-[8px] animate-pulse transition duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[4px_5px_0px_rgba(0,0,0)]'>
         <Link to="/" className='text-2xl text-white font-semibold'>Home</Link>
     </button>
+    <button className='mt-5 bg-[#F65926] rounded p-[8px] animate-pulse transition duration-500 ease-in-out hover:-translate-y-1 hover:shadow-[4px_5px_0px_rgba(0,0,0)]'>
+        <Link to="/proshows" className='text-2xl text-white font-semibold'>Pro Shows</Link>
+    </button>
     </div>
   )
 }
