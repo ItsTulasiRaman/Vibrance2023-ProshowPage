@@ -1,5 +1,7 @@
 body {
   margin: 0;
-  background: url('./assets/proshowbg.png');
+  background: url('./assets/proshowbg.svg');
   background-size:100%;
+  background-repeat: no-repeat;
+  height: auto;
 }
