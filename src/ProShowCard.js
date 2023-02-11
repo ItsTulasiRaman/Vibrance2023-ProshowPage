@@ -15,7 +15,7 @@ function ProShowCard({ proShowData }) {
         {proShowData.map((show) => (<div key={show.id} className='flex justify-center mt-[40px] m-w-[400px]'>
           <div className='p-[2%] w-[90%] min-w-[350px] flex md:flex-row flex-col gap-5 bdr'>
             <div className='flex justify-center items-center'>
-              <div className='box'>
+              <div className='box md:mt-0 mt-[18px]'>
                 <img className='corner-1' src={titik} alt='white dots'/>
                 <img className='centre' src={artist} alt='artist'/>
                 <img className='corner-2' src={titik} alt='white dots'/>
@@ -25,7 +25,7 @@ function ProShowCard({ proShowData }) {
 
 
             <div className='md:mt-[0px] md:ml-[-20px] p-[1%] pt-0'>
-              <h1 className='text-white md:text-[120px] text-[56px] cirkafont'>{show.title}</h1>
+              <h1 className='text-white md:text-[70px] text-[56px] cirkafont'>{show.title}</h1>
               <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px] mt-[4px]'>
                 <p className='text-white gilroyfont'>{show.description}</p>
                 <div className='flex flex-row gap-4'>
@@ -51,12 +51,6 @@ function ProShowCard({ proShowData }) {
                       </div>
                     </a>
                   </div>
-                  {/* <button className='bg-[#F65926] px-[20px] py-[12px] font-medium mb-[2%]'>
-                    <div className='flex flex-row gap-[10px]'>
-                      <p className='cirkabold'>Book tickets</p>
-                      <img className='pt-[3px]' src={bookticketsarrow} alt='book tickets icon' />
-                    </div>
-                  </button> */}
                 </div>
               </div>
 
