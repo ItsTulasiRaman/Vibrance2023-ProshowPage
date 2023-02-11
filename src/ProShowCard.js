@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import './App.css'
 import artist from './assets/artist.png'
 import titik from './assets/titik-titik.png'
@@ -6,7 +5,6 @@ import bookticketsarrowlight from './assets/bookticketsarrowlight.svg'
 import bookticketsarrowdark from './assets/bookticketsarrowdark.svg'
 import insta from "./assets/instagramicon.svg"
 import tweet from "./assets/twittericon.svg"
-//import proshowbg from "./assets/proshowbg.svg"
 
 function ProShowCard({ proShowData }) {
 
@@ -18,9 +16,9 @@ function ProShowCard({ proShowData }) {
           <div className='p-[2%] w-[90%] min-w-[350px] flex md:flex-row flex-col gap-5 bdr'>
             <div className='flex justify-center items-center'>
               <div className='box'>
-                <img className='corner-1' src={titik} />
-                <img className='centre' src={artist} />
-                <img className='corner-2' src={titik} />
+                <img className='corner-1' src={titik} alt='white dots'/>
+                <img className='centre' src={artist} alt='artist'/>
+                <img className='corner-2' src={titik} alt='white dots'/>
               </div>
             </div>
 

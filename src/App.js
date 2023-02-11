@@ -53,12 +53,12 @@ console.log(proShowData[0])
         </div>)
     :
       (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center mt-[40px]'>
       <MoonLoader
-        color="#36d7b7"
+        color="#F65926"
         cssOverride={{}}
         loading
-        size={150}
+        size={50}
         speedMultiplier={0.3}
       />
       </div>)}
