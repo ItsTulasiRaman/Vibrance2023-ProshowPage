@@ -6,10 +6,6 @@ import "./assets/gilroy-font/Gilroy-Light.ttf"
 import Navbar from './Navbar';
 import { MoonLoader } from 'react-spinners';
 import { motion } from 'framer-motion';
-import artist from './assets/artist.png'
-import titik from './assets/titik-titik.png'
-import insta from "./assets/instagramicon.svg"
-import tweet from "./assets/twittericon.svg"
 
 function App() {
   const [Loading, SetLoading] = useState(false)

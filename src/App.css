@@ -20,6 +20,12 @@
       url("./assets/font/naughty-monster.ttf") format("truetype");
   }
 
+.navbarfont{
+  font-family: "Naughty-Monster";
+  font-size: 40px;
+  font-weight: 400;
+}
+
 .bdr {
     position: relative;
   }
@@ -175,10 +181,4 @@
 }
 .btn-epic:hover span:last-child {
   transform: translateY(-40px);
-}
-
-.navbarfont{
-  font-family: "Naughty-Monster";
-  font-size: 40px;
-  font-weight: 400;
 }
