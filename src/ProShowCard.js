@@ -24,8 +24,8 @@ function ProShowCard({ proShowData }) {
 
 
 
-            <div className='md:mt-[0px] md:ml-[-20px] p-[1%] pt-0'>
-              <h1 className='text-white md:text-[70px] text-[56px] cirkafont'>{show.title}</h1>
+            <div className='md:mt-[25px] md:ml-[-20px] p-[1%] pt-0'>
+              <h1 className='text-white md:text-[70px] text-[56px] leading-none cirkafont'>{show.title}</h1>
               <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px] mt-[4px]'>
                 <p className='text-white gilroyfont'>{show.description}</p>
                 <div className='flex flex-row gap-4'>
