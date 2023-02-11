@@ -6,7 +6,6 @@ import "./assets/gilroy-font/Gilroy-Light.ttf"
 import Navbar from './Navbar';
 import artist from './assets/artist.png'
 import titik from './assets/titik-titik.png'
-import bookticketsarrow from './assets/bookticketsarrow.svg'
 import insta from "./assets/instagramicon.svg"
 import tweet from "./assets/twittericon.svg"
 
@@ -34,11 +33,12 @@ useEffect(() => {
 console.log(proShowData[0])
   return (
     <>
+    <div className='mt-10px' />
     <Navbar/>
       {Loading ? (<section className="mb-[40px]">
 
          <div className='flex justify-center mt-[30px] min-w-[320px]'>
-          <img className='w-[60%]' src={proshowintro} alt='pro show intro' />
+          <img className='w-[80%]' src={proshowintro} alt='pro show intro' />
         </div>
 
 
