@@ -3,4 +3,6 @@ body {
   background: url('./assets/proshowbg.svg');
   background-size:100%;
   height: auto;
+  background-repeat: no-repeat;
+  background-color: black;
 }
