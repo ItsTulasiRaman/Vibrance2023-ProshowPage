@@ -1,10 +1,10 @@
-import './App.css'
-import artist from './assets/artist.png'
-import titik from './assets/titik-titik.png'
-import bookticketsarrowlight from './assets/bookticketsarrowlight.svg'
-import bookticketsarrowdark from './assets/bookticketsarrowdark.svg'
-import insta from "./assets/instagramicon.svg"
-import tweet from "./assets/twittericon.svg"
+import './ProShow.css'
+import artist from './../assets/ProShow/artist.png'
+import titik from './../assets/ProShow/titik-titik.png'
+import bookticketsarrowlight from './../assets/ProShow/bookticketsarrowlight.svg'
+import bookticketsarrowdark from './../assets/ProShow/bookticketsarrowdark.svg'
+import insta from "./../assets/ProShow/instagramicon.svg"
+import tweet from "./../assets/ProShow/twittericon.svg"
 
 function ProShowCard({ proShowData }) {
 

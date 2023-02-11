@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import "./App.css"
+import "./ProShow.css"
 
 
 const Navbar = () => {
