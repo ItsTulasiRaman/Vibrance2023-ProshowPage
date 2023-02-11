@@ -21,9 +21,9 @@ const Navbar = () => {
                                 <div className="ml-10 flex items-baseline space-x-4 justify-between ">
                                     <a href="/" className="hover:cursor-pointer text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-bold">events</a>
 
-                                    <a href="/" className="hover:cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">pro shows</a>
+                                    <a href="/" className="hover:cursor-pointer text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold ">pro shows</a>
 
-                                    <a href="/" className="hover:cursor-pointer text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">merchandise</a>
+                                    <a href="/" className="hover:cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">merchandise</a>
 
                                     <a href="/" className="hover:cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">sponsors</a>
 
