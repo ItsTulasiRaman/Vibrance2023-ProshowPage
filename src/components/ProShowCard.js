@@ -5,9 +5,10 @@ import bookticketsarrowlight from './../assets/ProShow/bookticketsarrowlight.svg
 import bookticketsarrowdark from './../assets/ProShow/bookticketsarrowdark.svg'
 import insta from "./../assets/ProShow/instagramicon.svg"
 import tweet from "./../assets/ProShow/twittericon.svg"
+import { useNavigate } from 'react-router-dom'
 
 function ProShowCard({ proShowData }) {
-
+const navigate = useNavigate();
 
   return (
     <>
@@ -29,8 +30,8 @@ function ProShowCard({ proShowData }) {
               <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px] mt-[4px]'>
                 <p className='text-white gilroyfont'>{show.description}</p>
                 <div className='flex flex-row gap-4'>
-                  <img className='w-[40px]' src={insta} alt='instagram' />
-                  <img className='w-[40px]' src={tweet} alt='twitter' />
+                  <a href='https://www.instagram.com' target="_blank" rel='noopener noreferrer'><img className='w-[40px] relative' src={insta} alt='instagram' /></a>
+                  <a href='https://www.twitter.com' target="_blank" rel='noopener noreferrer'><img className='w-[40px] relative' src={tweet} alt='twitter' /></a>
                 </div>
                 <div className='mt-[18px]'>
                   <div className='w-[200px] grid'>
