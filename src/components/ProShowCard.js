@@ -1,11 +1,13 @@
 import './ProShow.css'
 import artist from './../assets/ProShow/artist.png'
 import titik from './../assets/ProShow/titik-titik.png'
+import vibrancelogo from './../assets/ProShow/vibrancelogo.png'
 import bookticketsarrowlight from './../assets/ProShow/bookticketsarrowlight.svg'
 import bookticketsarrowdark from './../assets/ProShow/bookticketsarrowdark.svg'
 import insta from "./../assets/ProShow/instagramicon.svg"
 import tweet from "./../assets/ProShow/twittericon.svg"
 import { useNavigate } from 'react-router-dom'
+import ReactImageFallback from 'react-image-fallback'
 
 function ProShowCard({ proShowData }) {
 const navigate = useNavigate();
@@ -18,7 +20,7 @@ const navigate = useNavigate();
             <div className='flex justify-center items-center'>
               <div className='box md:mt-0 mt-[18px]'>
                 <img className='corner-1' src={titik} alt='white dots'/>
-                <img className='centre' src={`${process.env.REACT_APP_VIBRANCE_API +show.image}`} alt='artist'/>
+                {<ReactImageFallback className='centre aspect-square' src={`${process.env.REACT_APP_VIBRANCE_API +show.image}`} fallbackImage={vibrancelogo} initialImage={vibrancelogo} alt='artist'/>}
                 <img className='corner-2' src={titik} alt='white dots'/>
               </div>
             </div>
