@@ -18,14 +18,14 @@ const navigate = useNavigate();
             <div className='flex justify-center items-center'>
               <div className='box md:mt-0 mt-[18px]'>
                 <img className='corner-1' src={titik} alt='white dots'/>
-                <img className='centre' src={artist} alt='artist'/>
+                <img className='centre' src={`${process.env.REACT_APP_VIBRANCE_API +show.image}`} alt='artist'/>
                 <img className='corner-2' src={titik} alt='white dots'/>
               </div>
             </div>
 
 
 
-            <div className='md:mt-[25px] md:ml-[-20px] p-[1%] pt-0'>
+            <div className='md:mt-[20px] md:ml-[-20px] p-[1%] pt-0'>
               <h1 className='text-white md:text-[70px] text-[56px] leading-none cirkafont'>{show.title}</h1>
               <div className='flex flex-col gap-[12px] md:ml-[-40px] p-[10px] mt-[4px]'>
                 <p className='text-white gilroyfont'>{show.description}</p>

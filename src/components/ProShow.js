@@ -12,7 +12,7 @@ export default function ProShow() {
 useEffect(() => {
   async function getData() {
     try{
-    const response = await fetch(`https://vitvibrance.onrender.com/api/v1.0/pro-shows`)
+    const response = await fetch(process.env.REACT_APP_VIBRANCE_PROSHOW_API)
     const data = await response.json();
     setproShowData(data.pro_shows)
     SetLoading(true)
